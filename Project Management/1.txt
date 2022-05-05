@@ -1,0 +1,19 @@
+The main aim of PROJECT SCHEDULING AND
+TRACKING is to get the project completed on time. Program evaluation and review technique
+(PERT) and Gantt chart are two project scheduling methods that can be applied to software
+development
+Split the project into tasks and estimate time and resources required to complete each task.
+Organize tasks concurrently to make optimal 
+use of workforce. Minimize task dependencies to avoid delays 
+caused by one task waiting for another to complete
+Gantt chart:
+A Gantt chart, commonly used in project management, is one of the most popular and useful
+ways of showing activities (tasks or events) displayed against time. On the left of the chart is a
+list of the activities and along the top is a suitable time scale. Each activity is represented by a
+bar; the position and length of the bar reflects the start date, duration and end date of the activity.
+This allows you to see at a glance:
+ What the various activities are
+ When each activity begins and ends
+ How long each activity is scheduled to last
+ Where activities overlap with other activities, and by how much
+ The start and end date of the whole projec

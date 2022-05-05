@@ -1,0 +1,75 @@
+Seq Diagram
+1) Object   [OBJECT :  CLASS]  -> BOX
+2) Lifeline ---- line to to bottom
+3) Actor
+4) Activation Bar  A duration for which our object is operational
+5) Messages : 
+	1) Synchronous  Sender w8 for reply
+	2) Asynchronous Sender doenot w8 for reply
+	3) Return 
+	4) Create Object create in b/tw
+	5) Delete 
+	6) Self
+
+
+The sequence diagram represents the flow of messages in the system and is also termed as an event diagram. It helps in envisioning several dynamic scenarios. It portrays the communication between any two lifelines as a time-ordered sequence of events, such that these lifelines took part at the run time. In UML, the lifeline is represented by a vertical bar, whereas the message flow is represented by a vertical dotted line that extends across the bottom of the page. It incorporates the iterations as well as branching.
+
+Purpose of a Sequence Diagram
+To model high-level interaction among active objects within a system.
+To model interaction among objects inside a collaboration realizing a use case.
+It either models generic interactions or some certain instances of interaction.
+
+
+Notations of a Sequence Diagram
+Lifeline
+An individual participant in the sequence diagram is represented by a lifeline. It is positioned at the top of the diagram.
+
+Actor
+A role played by an entity that interacts with the subject is called as an actor. It is out of the scope of the system. It represents the role, which involves human users and external hardware or subjects. An actor may or may not represent a physical entity, but it purely depicts the role of an entity. Several distinct roles can be played by an actor or vice versa.
+
+Activation
+It is represented by a thin rectangle on the lifeline. It describes that time period in which an operation is performed by an element, such that the top and the bottom of the rectangle is associated with the initiation and the completion time, each respectively.
+
+
+Messages
+The messages depict the interaction between the objects and are represented by arrows. They are in the sequential order on the lifeline. The core of the sequence diagram is formed by messages and lifelines.
+
+Following are types of messages enlisted below:
+
+Call Message: It defines a particular communication between the lifelines of an interaction, which represents that the target lifeline has invoked an operation.
+
+Return Message: It defines a particular communication between the lifelines of interaction that represent the flow of information from the receiver of the corresponding caller message.
+
+Self Message: It describes a communication, particularly between the lifelines of an interaction that represents a message of the same lifeline, has been invoked.
+
+Recursive Message: A self message sent for recursive purpose is called a recursive message. In other words, it can be said that the recursive message is a special case of the self message as it represents the recursive calls.
+
+Create Message: It describes a communication, particularly between the lifelines of an interaction describing that the target (lifeline) has been instantiated.
+
+Destroy Message: It describes a communication, particularly between the lifelines of an interaction that depicts a request to destroy the lifecycle of the target.
+
+Duration Message: It describes a communication particularly between the lifelines of an interaction, which portrays the time passage of the message while modeling a system.
+
+Note
+A note is the capability of attaching several remarks to the element. It basically carries useful information for the modelers.
+
+Sequence Fragments
+Sequence fragments have been introduced by UML 2.0, which makes it quite easy for the creation and maintenance of an accurate sequence diagram.
+It is represented by a box called a combined fragment, encloses a part of interaction inside a sequence diagram.
+The type of fragment is shown by a fragment operator.
+
+
+Benefits of a Sequence Diagram
+It explores the real-time application.
+It depicts the message flow between the different objects.
+It has easy maintenance.
+It is easy to generate.
+Implement both forward and reverse engineering.
+It can easily update as per the new change in the system.
+
+The drawback of a Sequence Diagram
+In the case of too many lifelines, the sequence diagram can get more complex.
+The incorrect result may be produced, if the order of the flow of messages changes.
+Since each sequence needs distinct notations for its representation, it may make the diagram more complex.
+The type of sequence is decided by the type of message.
+Next TopicUML Collaboration Diagram

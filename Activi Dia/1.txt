@@ -1,0 +1,71 @@
+Activity diagrams fall under the category of behavioral diagrams in Unified Modeling Language. It is a high level diagram used to visually represent the flow of control in a system. It has similarities with traditional flow charts. However, it is more powerful than a simple flow chart since it can represent various other concepts like concurrent activities, their joining, and so on. 
+Activity diagrams, however, cannot depict the message passing among related objects. As such, it can't be directly translated into code. These kinds of diagrams are suitable for confirming the logic to be implemented with the business users. These diagrams are typically used when the business logic is complex. In simple scenarios it can be avoided entirely. 
+
+Components of an Activity Diagram 
+Below we describe the building blocks of an activity diagram. 
+Activity 
+An activity denotes a particular action taken in the logical flow of control. This could simply be invocation of a mathematical function, alter an object's properties and so on. An activity is represented with a rounded rectangle, as shown in table-01. A label inside the rectangle identifies the corresponding activity. 
+There are two special types of activity nodes: initial and final. They are represented with a filled circle, and a filled in circle with a border respectively (table-01). Initial node represents the starting point of a flow in an activity diagram. There could be multiple initial nodes, which means that invoking that particular activity diagram would initiate multiple flows. 
+A final node represents the end point of all activities. Like an initial node, there could be multiple final nodes. Any transition reaching a final node would stop all activities. 
+
+Flow 
+A flow (also termed as edge or transition) is represented with a directed arrow. This is used to depict transfer of control from one activity to another, or to other types of components, as we will see below. A  flow is often accompanied with a label, called the guard condition, indicating the necessary condition for the transition to happen. The syntax to depict it is (guard condition). 
+
+Decision 
+A decision node, represented with a diamond, is a point where a single flow enters and two or more flows leave. The control flow can follow only one of the outgoing paths. The outgoing edges often have guard conditions indicating true-false or if-then-else conditions. However, they can be omitted in obvious cases. The input edge could also have guard conditions. Alternatively, a note can be attached to the decision node indicating the condition to be tested. 
+
+Merge 
+This is represented with a diamond shape, with two or more flows entering, and a single flow leaving out. A merge node represents the point where at least a single control should reach before further processing could continue. 
+
+Fork 
+Fork is a point where parallel activities begin. For example, when a student has been registered with a college, he can in parallel apply for student ID card and library card. A fork is graphically depicted with a black bar, with a single flow entering and multiple flows leaving out. 
+
+Join 
+A join is depicted with a black bar, with multiple input flows, but a single output flow. Physically it represents the synchronization of all concurrent activities. Unlike a merge, in case of a join all of the incoming controls must be completed before any further progress could be made. For example, a sales order is closed only when the customer has received the product, and the sales company has received its payment. 
+
+Note 
+UML allows attaching a note to different components of a diagram to present some textual information. 
+The information could simply be a comment or may be some constraint. A note can be attached to a decision point, for example, to indicate the branching criteria. 
+
+Partition 
+Different components of an activity diagram can be logically grouped into different areas, called partitions or swim lanes. They often correspond to different units of an organization or different actors. The drawing area can be partitioned into multiple compartments using vertical (or horizontal) parallel 
+
+Partitions in an activity diagram are not mandatory. The following table shows commonly used components with a typical activity diagram. 
+
+Component 
+Graphical Notation 
+Activity 
+(An Activity 
+Flow 
+TA Flow] 
+Decision 
+L 
+Merge 
+Fork 
+-E 
+
+Note 
+A simple note 
+A simple nate 
+Table-01: Typical components used in an activity diagram 
+A Simple Example 
+Figure-04 shows a simple activity diagram with two activities. The figure depicts two stages of a form submission. At first a form is filled up with relevant and correct information. Once it is verified that there is no error in the form, it is then submitted. The two other symbols shown in the figure are the initial node (dark filled circle), and final node (outer hollow circle with inner filled circle). It may be noted that there could be zero or more final node(s) in an activity diagram. 
+Fill up form 
+No error 
+Submit form 
+Figure-04: A simple activity diagram. 
+Procedure: 
+
+
+Guidelines for drawing State chart Diagrams 
+Following steps could be followed, to draw a state chart diagram: 
+• 
+For the system to developed, identify the distinct states that it passes through 
+• 
+Identify the events (and any precondition) that cause the state transitions. Often these would be the methods of a class as identified in a class diagram. 
+Identify what activities are performed while the system remains in a given state 
+
+Result and Discussion: 
+Q.1) What is a dynamic view of a system? Draw at least one state diagram and one activity diagram for your mini project. 
++ Dynamic UML diagrams describe the behavior of systems. A dynamic diagram describes the operations, actions, and changes that occur in a system over time. A static diagram, on the other hand, describes the characteristics of a system or part of a system. 
+The dynamic model represents the time-dependent aspects of a system. It is concerned with the temporal changes in the states of the objects in a system. 

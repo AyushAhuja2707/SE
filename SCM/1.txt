@@ -1,0 +1,73 @@
+Software configuration management: The traditional software configuration management (SCM) process is looked upon by practitioners as the best solution to handling changes in software projects. It identifies the functional and physical attributes of software at various points in time, and performs systematic control of changes to the identified attributes for the purpose of maintaining software integrity and traceability throughout the software development life cycle.
+Software configuration management is a part of software engineering, which focuses mainly on maintaining, tracking and controlling the changes done to the software configuration items. 
+Configuration management is present in all phase of software development. The configuration items can be all the objects which come as an output of the development process e.g. coding phase produces source code, exes and obj files. The various configuration items can be:
+1. Source code,
+2. Documents
+3. Data used in the programs
+In Configuration management, there can be multiple versions created for any configuration item (Source code/ documents). Each version can be identified by unique configuration or an attribute which is associated with each version. E.g. the version number.
+
+Terminologies used in version control
+1. SCI – Software configuration items, i.e. the documents and code which will be having version number and saved.
+2. Repository- it is the system where all the SCIs will be stored.
+3. Check in- to store the tested and qualified source code.
+4. Checkout- to get a copy of the stored SCI from the repository.
+5. Add – Add to the local repo and keep ready for commit
+6. Commit- to save the file in repository and create a version 
+
+Advantages 
+1) The versions are stored in the repository; hence they are available as backups.
+2) Multiple people can work simultaneously on same files/source code, without losing the changes made by other developers
+3) It is easy to find the files with specifications as a versions are stored with version numbers
+
+GitHub offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. Unlike Git, which is strictly a command-line tool, GitHub provides a Web-based graphical interface and desktop as well as mobile integration. It also provides access control and several collaboration features such as bug tracking, feature requests, task management for every project. 
+
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git
+$ git init
+Initialized empty Git repository in E:/sem 6/SE/Git/.git/
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git add .
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git commit -m "First Version"
+[master (root-commit) 385f355] First Version
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git commit -m "Second Version"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git log --decorate --oneline --graph
+* 385f355 (HEAD -> master) First Version
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git add .
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git commit -m "Second Version"
+[master 42bfced] Second Version
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ git log --decorate --oneline --graph
+* 42bfced (HEAD -> master) Second Version
+* 385f355 First Version
+
+user@Ayush-G3 MINGW64 /e/sem 6/SE/Git (master)
+$ ^C
+
